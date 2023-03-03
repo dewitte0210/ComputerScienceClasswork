@@ -1,0 +1,8 @@
+﻿  Main.cpp
+C:\Users\DewittEvan\OneDrive - University of Wisconsin-Stout\Documents\College assignments\Semester 3\Data Structures\FA2022Review\PointerPractice\Main.cpp(72,20): warning C4018: '<': signed/unsigned mismatch
+Main.obj : error LNK2019: unresolved external symbol "public: __thiscall Fraction::Fraction(void)" (??0Fraction@@QAE@XZ) referenced in function "public: static void __cdecl std::_Default_allocator_traits<class std::allocator<class Fraction> >::construct<class Fraction>(class std::allocator<class Fraction> &,class Fraction * const)" (??$construct@VFraction@@$$V@?$_Default_allocator_traits@V?$allocator@VFraction@@@std@@@std@@SAXAAV?$allocator@VFraction@@@1@QAVFraction@@@Z)
+Main.obj : error LNK2019: unresolved external symbol "public: __thiscall Fraction::Fraction(int,int)" (??0Fraction@@QAE@HH@Z) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: int __thiscall Fraction::getNumerator(void)" (?getNumerator@Fraction@@QAEHXZ) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall Fraction::setNumerator(int)" (?setNumerator@Fraction@@QAEXH@Z) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall Fraction::setDenominator(int)" (?setDenominator@Fraction@@QAEXH@Z) referenced in function _main
+C:\Users\DewittEvan\OneDrive - University of Wisconsin-Stout\Documents\College assignments\Semester 3\Data Structures\FA2022Review\Debug\PointerPractice.exe : fatal error LNK1120: 5 unresolved externals

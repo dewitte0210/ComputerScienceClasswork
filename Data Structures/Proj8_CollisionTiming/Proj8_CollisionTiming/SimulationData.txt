@@ -1,0 +1,4 @@
+Avg inserts before first collision: 6.514
+Avg inserts before Load Factor 0.9: 70.254
+Avg inserts before Load Factor 1.0: 113.13
+Avg inserts before first Chain on 29: 557.286

@@ -1,0 +1,5 @@
+﻿  Main.cpp
+C:\Users\DewittEvan\OneDrive - University of Wisconsin-Stout\Documents\College assignments\Semester 3\Data Structures\Environment Simulation Design\Environment Simulation Design\Main.cpp(28,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\DewittEvan\OneDrive - University of Wisconsin-Stout\Documents\College assignments\Semester 3\Data Structures\Environment Simulation Design\Environment Simulation Design\Main.cpp(63,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\DewittEvan\OneDrive - University of Wisconsin-Stout\Documents\College assignments\Semester 3\Data Structures\Environment Simulation Design\Environment Simulation Design\Main.cpp(66,26): warning C4018: '<': signed/unsigned mismatch
+  Environment Simulation Design.vcxproj -> C:\Users\DewittEvan\OneDrive - University of Wisconsin-Stout\Documents\College assignments\Semester 3\Data Structures\Environment Simulation Design\Debug\Environment Simulation Design.exe

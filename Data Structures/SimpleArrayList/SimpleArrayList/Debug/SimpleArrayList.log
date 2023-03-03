@@ -1,0 +1,11 @@
+﻿  TestSimpleArrayList.cpp
+C:\Users\DewittEvan\OneDrive - University of Wisconsin-Stout\Documents\College assignments\Semester 3\Data Structures\SimpleArrayList\SimpleArrayList\SimpleArrayList.h(31,1): error C2662: 'T SimpleArrayList<T>::get(int)': cannot convert 'this' pointer from 'const SimpleArrayList<int>' to 'SimpleArrayList<int> &'
+          with
+          [
+              T=int
+          ]
+C:\Users\DewittEvan\OneDrive - University of Wisconsin-Stout\Documents\College assignments\Semester 3\Data Structures\SimpleArrayList\SimpleArrayList\SimpleArrayList.h(31,14): message : Conversion loses qualifiers
+C:\Users\DewittEvan\OneDrive - University of Wisconsin-Stout\Documents\College assignments\Semester 3\Data Structures\SimpleArrayList\SimpleArrayList\SimpleArrayList.h(93,4): message : see declaration of 'SimpleArrayList<int>::get'
+C:\Users\DewittEvan\OneDrive - University of Wisconsin-Stout\Documents\College assignments\Semester 3\Data Structures\SimpleArrayList\SimpleArrayList\SimpleArrayList.h(25): message : while compiling class template member function 'SimpleArrayList<int>::SimpleArrayList(const SimpleArrayList<int> &)'
+C:\Users\DewittEvan\OneDrive - University of Wisconsin-Stout\Documents\College assignments\Semester 3\Data Structures\SimpleArrayList\SimpleArrayList\TestSimpleArrayList.cpp(22): message : see reference to function template instantiation 'SimpleArrayList<int>::SimpleArrayList(const SimpleArrayList<int> &)' being compiled
+C:\Users\DewittEvan\OneDrive - University of Wisconsin-Stout\Documents\College assignments\Semester 3\Data Structures\SimpleArrayList\SimpleArrayList\TestSimpleArrayList.cpp(7): message : see reference to class template instantiation 'SimpleArrayList<int>' being compiled
