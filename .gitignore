@@ -5,3 +5,5 @@
 # Compiled Object files
 *.slo
 *.lo
+
+*.lastbuildstate
