@@ -7,3 +7,5 @@
 *.lo
 
 *.lastbuildstate
+/shelf/
+/workspace.xml
