@@ -29,7 +29,7 @@ def show_both(img):
     cv2.imshow("DFT / Reconstructed Image", np.concatenate((dft_image(img), get_image(img)), axis=1))
 
 ## STEP 1. IMAGE RECONSTRUCTION
-"""
+
 image = cv2.imread("HalftoneImages/halftone.png", cv2.IMREAD_GRAYSCALE) * 1.0
 dft = get_dft(image)
 print(image.shape)
@@ -59,7 +59,7 @@ cv2.imwrite("HalftoneImages/scanFixed.png",get_image(scanDft))
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-"""
+
 ## STEP 2. COLOR SPACE CONVERSIONS
 
 img = cv2.imread("standard_test_images/peppers_color.tif")
