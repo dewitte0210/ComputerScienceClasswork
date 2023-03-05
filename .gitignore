@@ -9,3 +9,6 @@
 *.lastbuildstate
 /shelf/
 /workspace.xml
+
+*.xml
+*\.idea\.gitignore
