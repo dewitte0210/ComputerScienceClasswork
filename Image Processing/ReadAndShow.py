@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Read in the file clocktower.jpg
-img = cv2.imread("clocktower.jpg", cv2.IMREAD_COLOR)
+img = cv2.imread("standared_test_images/clocktower.jpg", cv2.IMREAD_COLOR)
 print(img.shape)
 
 # [start (inclusive) : end (exclusive) : increment]
