@@ -14,6 +14,8 @@ rImg[rImg != 0 ] = 255
 kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3,3))
 rImg = cv2.erode(rImg,kernel,iterations = 2)
 lines = []
+
+#get the polar coordinates of each line
 for i in range(len(rImg)):
     for j in range(len(rImg[1])):
         if rImg[i,j] == 255:
@@ -25,23 +27,29 @@ for i in range(len(rImg)):
             if not duplicate:
                 lines.append((p, theta))
 
-#Detecting the lines
+#Converts the polar coordinates to x,y 
 for i in range(len(lines)):
     coords = (lines[i][0] * np.cos(lines[i][1]), lines[i][0] * np.sin(lines[i][1]))
-    print(coords)
+    #print(coords)
     slope = np.float32(coords[0] / coords[1]) * -1 # this is the slope of our perpendicular line
     b = (slope * coords[0]  *-1) + coords[1]
     lines[i] = (slope, b)
 
-print(lines)    
+#print(lines)    
 intersects = []
+#Calculate the intersections of the line
 for i in range(len(lines)):
     for k in range(len(lines)):
-        x = (lines[i][1] - lines[k][1]) / (lines[i][0] - lines[k][0])
-        y = lines[i][0] * x + lines[i][1]
-        if x > 0 and x < img.shape[0] and y > 0 and y < img.shape[1]:
-            intersects.append((x,y))
-
+        if i != k:
+            x = (lines[i][1] - lines[k][1]) / (lines[i][0] - lines[k][0])
+            y = lines[i][0] * x + lines[i][1]
+            if (lines[i][0] < 0 and lines[k][0] > 0 or (lines[i][0] > 0 and lines[k][0] < 0)):
+                duplicate = False
+                for j in range(len(intersects)):
+                    if(x == intersects[j][0] or y == intersects[j][1]):
+                        duplicate = True
+                if duplicate == False:
+                    intersects.append((x,y))
 print(intersects)
 
     
