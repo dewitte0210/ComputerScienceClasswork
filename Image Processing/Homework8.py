@@ -9,7 +9,7 @@ botLeftAngle:  100.8684225867826
 botRightAngle:  154.21827538914144
 topRightAngle:  57.75973745572647
 
-Never Nesters Beware the following code has the power to make your eyese bleed
+Never Nesters Beware the following code has the power to make your eyes bleed
 '''
 
 
