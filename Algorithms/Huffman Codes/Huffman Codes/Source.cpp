@@ -68,18 +68,23 @@ int main() {
 			weights.emplace(contents.at(i), letterWeight);
 		}
 	}
-	HuffmanTree endcodingTree = getEncodingTree(weights);
-	input.open("Text.txt");
+	HuffmanTree encodingTree = getEncodingTree(weights);
+	input.open("Literacy Narrative.docx");
 	std::ofstream output;
-	output.open("EncodedText.txt");
+	output.open("LiteracyNarrativeEncoded.txt");
+	for (std::map<char,double>::iterator i = weights.begin(); i != weights.end(); i++)
+	{
+		output << i->first << ": " << encodingTree.getEncodedChar(i->first) << std::endl;
+	}
 	while (!input.eof())
 	{
 		std::string line;
 		std::getline(input, line);
 		for (int i = 0; i < line.size(); i++)
 		{
-			std::string endcoded = endcodingTree.getEncodedChar(line.at(i));
-			output << endcoded << " ";
+			std::string endcoded = encodingTree.getEncodedChar(line.at(i));
+			output << endcoded;
+
 		}
 	}
 	input.close();
