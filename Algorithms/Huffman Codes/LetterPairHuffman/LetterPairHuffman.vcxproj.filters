@@ -15,15 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <Text Include="Text.txt">
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="EncodedText.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="DivideandConquerNotes.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="TheQuestForBeans.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="EncodedBeans.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="EncodedNotes.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
@@ -31,5 +38,10 @@
     <ClInclude Include="HuffmanTreePairs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LetterPairEncoding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

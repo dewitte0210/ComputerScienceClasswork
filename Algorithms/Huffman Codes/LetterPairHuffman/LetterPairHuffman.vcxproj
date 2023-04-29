@@ -139,14 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
+    <Text Include="EncodedBeans.txt" />
+    <Text Include="EncodedNotes.txt" />
     <Text Include="EncodedText.txt" />
     <Text Include="Text.txt" />
+    <Text Include="DivideandConquerNotes.txt" />
+    <Text Include="TheQuestForBeans.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HuffmanTreePairs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LetterPairEncoding.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
