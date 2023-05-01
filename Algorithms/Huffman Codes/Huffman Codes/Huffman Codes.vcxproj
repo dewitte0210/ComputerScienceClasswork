@@ -139,17 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
+    <Text Include="EncodedBeans.txt" />
     <Text Include="EncodedText.txt" />
+    <Text Include="DivideandConquerNotes.txt" />
+    <Text Include="EncodedDivideandConquer.txt" />
     <Text Include="Text.txt" />
+    <Text Include="TheQuestForBeans.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HuffmanTree.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\..\..\..\Downloads\Literacy Narrative.docx" />
+    <ClCompile Include="SingleLetterEncoding.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

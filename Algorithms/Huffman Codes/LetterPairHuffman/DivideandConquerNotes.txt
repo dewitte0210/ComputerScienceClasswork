@@ -1,0 +1,93 @@
+Divide and Conquer Algorithms
+
+- Always a Recursive algorithm
+
+Consists of two phases
+
+1. Divide problem recursively into smaller subproblems.
+
+a. EX: Merge sort divides down into arrays of size 1
+
+2. Combine answers of the subproblems
+
+Next, an example
+
+Closest Pair of Points
+
+- Given N points on a plane, find the 2 closest to each other.
+
+- A potential Brute Force solution would be to find the distance for every pair then pick the shortest.
+
+- A better solution might be to divide in the middle int two subproblems, each size N/2
+
+o Solve the subproblems.
+
+o Closest pair is either in left sub, right sub or divided by the middle line.
+
+Recurrence Relation:
+
+T(N) = a * T(N/b) + f(N): a = some number of sub problems. b = size of subproblem F(N) is the work you have to do to reconstruct your problem
+
+EX: Write this for Closest Pair of Points
+
+T(N) = _ * T(N/2) + _ : N/2 because each division divides the Points by 2
+
+T(N) = 2 * T(N/2) + _ : a = 2 because each split creates 2 sub problems
+
+T(N) = 2 * T(N/2) + 8N: F(N) = 8N because there are 8 checks per point when reconstructing the set
+
+Final: T(N) = 2 * T(N/2) + 8N
+
+The Master Theorem
+
+If F(N) = N ^ d, then: one of the following three cases holds T(N) =
+
+1. Theta(N^d) If a < b^d
+
+2. Theta(N^dLogN) if a = b^d
+
+3. Theta(N^log base b of a) If a > b^d
+
+Applying this to our relation for Closest Pair of Points where:
+
+- a = 2
+
+- b = 2
+
+- and d = 1 (because 8N = 8N^1)
+
+a = 2^1 therefore T(N) = NLog(N)
+
+Apply this to Binary Search
+
+- a = 1, b = 2, F(N) = 1
+
+- This means that d = 0
+
+- 1 = 1 which means T(N) = Theta (NlogN)
+
+Apply this to Merge Sort
+
+- a = 2, b = 2, F(N) = N
+
+- This means that d = 1 because N = N ^ 1
+
+- 2 = 2^1 therefore T(N) = Theta (NLog(N))
+
+Apply this to Quick Sort
+
+- a = 2, b = 1, F(N) = N
+
+- this means that d = 1 because N = N^1
+
+- 2 > 1^1, therefore T(N) = Theta (N^Log base 1 of 2
+
+o This is a weakness of the master theorem as it can’t be used to solve some problems, namely certain ones with b=1
+
+Apply this to Tri-Merge sort.
+
+- a=3, b = 3, F(N) = N
+
+- d = 1
+
+- 3 = 3 therefore T(N) = Theta (NLogN)
